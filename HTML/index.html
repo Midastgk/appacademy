@@ -1,46 +1,71 @@
-<!doctype html>
-<html><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" href="basic.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-</head>
-<body>
-	<form method="POST">
-		<fieldset>
-			<legend>Add User</legend>
-				<input type="text" name="" placeholder="Firstname"><br>
-				<input type="text" name="" placeholder="Lastname"><br>
-				<input type="email" name="" placeholder="Email"><br>
-				<label for="status">Status:</label>
-				<select name="status">
-					<option value="Student">Student</option>
-					<option value="Teacher">Teacher</option>
-					<option value="Guest">Guest</option>
-				</select>
-		</fieldset>
-		<p>Choose your favorite programming language:</p>
-		 	<input type="radio" value="HTML" id="html" name="favlang">
-		 		<label for="html">HTML</label><br>
-		 	<input type="radio" value="CSS" id="css" name="favlang">
-		 		<label for="css">CSS</label><br>
-		 	<input type="radio" value="JavaScript" id="JavaScript" name="favlang">
-		 		<label for="JavaScript">JavaScript</label><br>
-		 <label for="comments">Comments:</label>
-		 	<textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+    <head>
+        <link rel="stylesheet" type="text/css" href="basic.css">
+    </head>
+    <body>
+        <form action="/form-handling-url" method="post" class="flex-container">
+            <fieldset>
+            <legend>Add user</legend>
+        
+            <div>
+                <label for="firstName">First name:</label><br>
+                <input type="text" id="firstName" name="first_name">
+            </div>
+        
+            <div>
+                <label for="lastName">Last name:</label><br>
+                <input type="text" id="lastName" name="last_name">
+            </div>
+        
+            <div>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email_address">
+            </div>
+        	<div class="child1">
+            <div>
+                <label for="role">Status:</label>
+                <br>
+                <select id="role" name="user_role_name">
+                <option value="student">Student</option>
+                <option value="instructor">Instructor</option>
+                <option value="guest">Guest</option>
+                </select>	
+            </div>
+             <div>
+	                <label for="date">Date:</label><br>
+	                <input type="date" id="date" name="date">
+	            </div>
+         	</div>
+            
+            <div>
+                <p>Choose your favorite Web language:</p>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+            </div>
 
-		 <input type="checkbox" name="news" id="news">
-		 	<label for="news">Subscribe Newsletter</label><br>
-		 <input type="checkbox" name="agb" id="agb">
-		 	<label for="agb">Agree to AGB</label><br>
-
-		 <input type="submit" name="submit" value="submit">
-		 
+            <div class="comments">
+                <label for="comments" id="com">Comments</label><br>
+                <textarea id="comments" name="comments"></textarea>
+            </div>
 
 
-		
-	</form>
-</body>
+            <div class="agree">
+                <input type="checkbox" id="signup" name="signup" value="Signup">
+                <label for="signup">Sign up<br> news</label>
+                <input type="checkbox" id="terms" name="terms" value="Terms">
+                <label for="terms"> Agree to<br> terms</label>
+            </div>
+        
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        
+            </fieldset>
+        </form>
+    </body>
 </html>

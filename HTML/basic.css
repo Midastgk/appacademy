@@ -1,9 +1,42 @@
-legend {
-	background-color: #000;
-	color: #fff;
-	padding: 3px 6px;
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	
+	
 }
 
-fieldset{
-	width: 50%;
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+.child1{
+	display: inline-flex;
+}
+
+legend{
+	border: 2px solid;
+	text-align: left;
+}
+input, button{
+	padding: 3px;
+	margin: 4px;
+
+}
+.agree{
+	display: inline-flex;
+
+}
+button{
+	padding: 0px;
+	text-align: center;
+	width:	120px;
+	border-radius: 1px;
+}
+#signup, #terms{
+	width: 20px;
+}
+#role {
+	margin: auto;
+	
 }
